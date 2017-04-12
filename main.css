@@ -7,9 +7,8 @@ body {
 	height: 10%;
 	background-color: white;
 }
-#cubes {
+    .cubes {
 	height: 80%;
-
 }
 .wrapper {
 	width: 50%;
@@ -64,3 +63,13 @@ body {
 	background-color: white;
 }
 
+@media (max-width: 854px) {
+    #cube2 {
+        display: none;
+    }
+    
+    #cube1 {
+        float: none;
+        margin: auto;
+    }
+}
