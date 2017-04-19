@@ -5,10 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<div id="header"></div>
+<div id="header"><h1>Porn Cubes</h1></div>
 <div id="cubes">
 	<div class="wrapper">
-		<div class="cube">
+		<div id="c-left" class="cube">
 		<div class="side" id="side1">1</div>
 		<div class="side" id="side2">2</div>
 		<div class="side" id="side3">3</div>
@@ -18,26 +18,29 @@
 	</div>
 	</div>
 	<div class="wrapper">
-		<div class="cube">
-		<div class="side" id="side1">1</div>
-		<div class="side" id="side2">2</div>
-		<div class="side" id="side3">3</div>
-		<div class="side" id="side4">4</div>
-		<div class="side" id="side5">5</div>
-		<div class="side" id="side6">6</div>
+		<div id="c-right" class="cube">
+		<div class="side" id="side1">a</div>
+		<div class="side" id="side2">b</div>
+		<div class="side" id="side3">c</div>
+		<div class="side" id="side4">d</div>
+		<div class="side" id="side5">e</div>
+		<div class="side" id="side6">f</div>
 	</div>
 	</div>
 </div>
-<div id="footer"></div>
+<div id="footer">
+	<button id="turn" onclick="turn()">TURN</button>
+</div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="common.js"></script>
 <script>
-	$(function(){
-		$(document).mousemove(function(e){
-			$('.cube').css({
-				'transform':'rotateX('+e.pageY+'deg)rotateY('+e.pageX+'deg)'
-			});
-		});
-	});
+//	$(function(){
+//		$(document).mousemove(function(e){
+//			$('.cube').css({
+//				'transform':'rotateX('+e.pageY+'deg)rotateY('+e.pageX+'deg)'
+//			});
+//		});
+//	});
 </script>	
 </body>
 </html>
